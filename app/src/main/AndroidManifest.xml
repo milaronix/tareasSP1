@@ -20,6 +20,10 @@
             android:name=".midetalle"
             android:label="@string/title_activity_midetalle" >
         </activity>
+        <activity
+            android:name=".ImgLogo"
+            android:label="@string/title_activity_img_logo" >
+        </activity>
     </application>
 
 </manifest>

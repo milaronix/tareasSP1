@@ -5,5 +5,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_midetalle">midetalle</string>
+    <string name="title_activity_img_logo">ImgLogo</string>
 
 </resources>

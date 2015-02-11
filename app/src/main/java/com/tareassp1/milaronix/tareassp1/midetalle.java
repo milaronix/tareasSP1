@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.text.util.Linkify;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class midetalle extends ActionBarActivity {
@@ -42,6 +45,18 @@ public class midetalle extends ActionBarActivity {
         String sitio = i.getStringExtra("elwebsite");
         websiteEst.setText(sitio);
         Linkify.addLinks(websiteEst,Linkify.ALL);
+
+        ImageButton boton = (ImageButton) findViewById(R.id.logo);
+
+        /*boton.setOnClickListener(new View.OnClickListener(){
+            @Override
+                    public void onClick(View v){
+                Toast.makeText(getApplicationContext(),"mensaje",Toast.LENGTH_LONG);
+            }
+        });*/
+
+        /*Intent in = new Intent(getApplicationContext(),ImgLogo.class);
+        startActivity(in);*/
     }
 
 
