@@ -46,14 +46,14 @@ public class midetalle extends ActionBarActivity {
         websiteEst.setText(sitio);
         Linkify.addLinks(websiteEst,Linkify.ALL);
 
-        ImageButton boton = (ImageButton) findViewById(R.id.logo);
+        ImageButton boton = (ImageButton) findViewById(R.id.estrella);
 
-        /*boton.setOnClickListener(new View.OnClickListener(){
+        boton.setOnClickListener(new View.OnClickListener(){
             @Override
                     public void onClick(View v){
                 Toast.makeText(getApplicationContext(),"mensaje",Toast.LENGTH_LONG);
             }
-        });*/
+        });
 
         /*Intent in = new Intent(getApplicationContext(),ImgLogo.class);
         startActivity(in);*/
