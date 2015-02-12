@@ -6,14 +6,48 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class ImgLogo extends ActionBarActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_img_logo);
+
+        Intent iproviene = getIntent();
+        String nombre = iproviene.getStringExtra("nombre");
+
+        ImageView imagen = (ImageView) findViewById(R.id.logo);
+
+        switch (nombre){
+            case "Pollo Campero":
+                imagen.setImageResource(R.drawable.campero);
+                break;
+            case "Taco Bell":
+                imagen.setImageResource(R.drawable.taco);
+                break;
+            case "Pizza Hut":
+                imagen.setImageResource(R.drawable.pizzahut);
+                break;
+            case "Go Green":
+                imagen.setImageResource(R.drawable.gogreen);
+                break;
+            case "Subway":
+                imagen.setImageResource(R.drawable.subway);
+                break;
+            case "Burguer King":
+                imagen.setImageResource(R.drawable.burguer);
+                break;
+        }
+
+
+
+
     }
 
 

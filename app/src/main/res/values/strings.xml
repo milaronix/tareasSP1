@@ -10,5 +10,6 @@
     <string name="title_activity_midetalle">midetalle</string>
     <string name="title_activity_img_logo">ImgLogo</string>
     <string name="msg_compartir">Te comparto %1$s</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

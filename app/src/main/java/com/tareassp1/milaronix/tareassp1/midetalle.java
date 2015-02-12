@@ -85,7 +85,10 @@ public class midetalle extends ActionBarActivity {
     }
 
     public void elclick (View view){
+        Intent in = getIntent();
+        String nombre = in.getStringExtra("elnombre");
         Intent i = new Intent(getApplicationContext(),ImgLogo.class);
+        i.putExtra("nombre", nombre);
         startActivity(i);
     }
 }
