@@ -7,6 +7,7 @@ import android.text.util.Linkify;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -46,17 +47,8 @@ public class midetalle extends ActionBarActivity {
         websiteEst.setText(sitio);
         Linkify.addLinks(websiteEst,Linkify.ALL);
 
-        ImageButton boton = (ImageButton) findViewById(R.id.estrella);
+        Button boton = (Button) findViewById(R.id.bimagen);
 
-        boton.setOnClickListener(new View.OnClickListener(){
-            @Override
-                    public void onClick(View v){
-                Toast.makeText(getApplicationContext(),"mensaje",Toast.LENGTH_LONG);
-            }
-        });
-
-        /*Intent in = new Intent(getApplicationContext(),ImgLogo.class);
-        startActivity(in);*/
     }
 
 
@@ -73,12 +65,33 @@ public class midetalle extends ActionBarActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+        Intent i = getIntent();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id){
+            case R.id.action_share:
+                String nombre = i.getStringExtra("elnombre");
+                String compartir = "Mensaje para compartir" + nombre;
+                String msg = getString(R.string.msg_compartir, nombre);
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_SEND);
+                intent.putExtra(intent.EXTRA_TEXT, msg);
+                intent.setType("text/plain");
+                startActivity(Intent.createChooser(intent,getString(R.string.action_share)));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
 
-        return super.onOptionsItemSelected(item);
+        //noinspection SimplifiableIfStatement
+        /*if (id == R.id.action_settings) {
+            return true;
+        }*/
+
+        //return super.onOptionsItemSelected(item);
+    }
+
+    public void elclick (View view){
+        Intent i = new Intent(getApplicationContext(),ImgLogo.class);
+        startActivity(i);
     }
 }
