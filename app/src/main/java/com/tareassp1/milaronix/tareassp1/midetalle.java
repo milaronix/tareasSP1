@@ -82,12 +82,6 @@ public class midetalle extends ActionBarActivity {
                 return super.onOptionsItemSelected(item);
         }
 
-        //noinspection SimplifiableIfStatement
-        /*if (id == R.id.action_settings) {
-            return true;
-        }*/
-
-        //return super.onOptionsItemSelected(item);
     }
 
     public void elclick (View view){
