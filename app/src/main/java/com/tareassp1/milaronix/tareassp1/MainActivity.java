@@ -4,8 +4,8 @@ package com.tareassp1.milaronix.tareassp1;
  * Created by Milaronix on 25/01/2015.
  */
 
-import android.app.Activity;
-import android.app.ListActivity;
+import android.app.ActionBar;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -15,7 +15,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
@@ -44,6 +43,7 @@ public class MainActivity extends ActionBarActivity {
         });
 
         lv.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nombres));
+
     }
 
 

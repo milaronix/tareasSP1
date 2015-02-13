@@ -17,4 +17,11 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true" />
 
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.tareassp1.milaronix.tareassp1.comentario_imagen"
+        android:id="@+id/fragmento_comentario" />
+
+
 </RelativeLayout>

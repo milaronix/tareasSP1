@@ -2,7 +2,7 @@ package com.tareassp1.milaronix.tareassp1;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-public class ImgLogo extends ActionBarActivity {
+public class ImgLogo extends FragmentActivity {
 
 
 
@@ -18,6 +18,7 @@ public class ImgLogo extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_img_logo);
+
 
         Intent iproviene = getIntent();
         String nombre = iproviene.getStringExtra("nombre");
@@ -44,9 +45,6 @@ public class ImgLogo extends ActionBarActivity {
                 imagen.setImageResource(R.drawable.burguer);
                 break;
         }
-
-
-
 
     }
 
