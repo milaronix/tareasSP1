@@ -8,6 +8,5 @@
         android:layout_height="wrap_content"
         android:id="@+id/main_lista"
         android:layout_gravity="center_horizontal"
-        android:background="@color/background_material_dark"
         />
 </LinearLayout>

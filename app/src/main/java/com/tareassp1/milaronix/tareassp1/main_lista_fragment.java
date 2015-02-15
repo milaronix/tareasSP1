@@ -53,6 +53,6 @@ public class main_lista_fragment extends Fragment{
             }
         });
 
-        lv.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(), android.R.layout.simple_list_item_1, nombres));
+        lv.setAdapter(new ArrayAdapter<String>(getActivity().getBaseContext(), android.R.layout.simple_list_item_1, nombres));
     }
 }
