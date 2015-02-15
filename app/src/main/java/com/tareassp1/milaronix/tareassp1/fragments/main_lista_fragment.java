@@ -1,4 +1,4 @@
-package com.tareassp1.milaronix.tareassp1;
+package com.tareassp1.milaronix.tareassp1.fragments;
 
 //import android.app.Fragment;
 import android.content.Intent;
@@ -13,6 +13,9 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.tareassp1.milaronix.tareassp1.R;
+import com.tareassp1.milaronix.tareassp1.activities.midetalle;
+
 /**
  * Created by milaronix on 12/02/15.
  */
@@ -21,9 +24,6 @@ public class main_lista_fragment extends Fragment{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
     }
 
     @Override
@@ -53,6 +53,6 @@ public class main_lista_fragment extends Fragment{
             }
         });
 
-        lv.setAdapter(new ArrayAdapter<String>(getActivity().getBaseContext(), android.R.layout.simple_list_item_1, nombres));
+        lv.setAdapter(new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, nombres));
     }
 }

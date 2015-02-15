@@ -1,4 +1,4 @@
-package com.tareassp1.milaronix.tareassp1;
+package com.tareassp1.milaronix.tareassp1.activities;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -9,6 +9,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.tareassp1.milaronix.tareassp1.R;
 
 
 public class ImgLogo extends ActionBarActivity {

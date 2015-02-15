@@ -12,6 +12,8 @@
     <string name="msg_compartir">Te comparto %1$s</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="msg_about">Desarrollado por milaronix</string>
+    <string name="titulo_pestaña_establcimiento">Establecimientos</string>
+    <string name="titulo_pestaña_mapas">Mapas</string>
 
     <string-array name="establecimientos">
         <item>Pollo Campero</item>
